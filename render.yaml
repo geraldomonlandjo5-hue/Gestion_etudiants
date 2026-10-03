@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: gestion-etudiants
+    runtime: docker
+    plan: free
+    repo: https://github.com/geraldomonlandjo5-hue/Gestion_etudiants
+    branch: main
+    healthCheckPath: /

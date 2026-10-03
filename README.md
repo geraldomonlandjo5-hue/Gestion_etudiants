@@ -21,3 +21,7 @@ Le routeur sert les pages et empêche le téléchargement du fichier de base. La
 ## Données
 
 Les fiches sont enregistrées dans une base SQLite : `data/etudiants.sqlite`. Ce fichier reste sur la machine et n’est pas versionné.
+
+## Déployer sur Render
+
+Le fichier `render.yaml` décrit un Web Service gratuit (`gestion-etudiants`, runtime Docker) construit depuis la branche `main`. Sur le plan gratuit Render, le fichier SQLite reste local au conteneur et est éphémère : les fiches sont perdues à chaque redéploiement ou redémarrage.
